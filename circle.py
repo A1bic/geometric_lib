@@ -1,6 +1,5 @@
 import math
 
-
 def area(r):
     '''
     Принимает значение r - радиус окружности
@@ -20,6 +19,6 @@ def perimeter(r):
     
     Пример запуска
     Input: area(4)
-    Output: 50.26548245743669
+    Output: 25.132741228718345
     '''
     return 2 * math.pi * r
