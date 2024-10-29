@@ -24,6 +24,7 @@ class RectangleTestCase(unittest.TestCase):
         self.assertEqual(area(9999999), 9999999**2)
         self.assertEqual(area(0.00001), 0.00001**2)
         self.assertIsInstance(area(1e18), float)
+        self.assertIsInstance(area(1e18 ** -1), float)
 
     '''
     Тесты для perimeter()
@@ -45,6 +46,7 @@ class RectangleTestCase(unittest.TestCase):
         self.assertEqual(perimeter(9999999), 39999996)
         self.assertEqual(perimeter(0.00001), 0.00004)
         self.assertIsInstance(perimeter(1e18), float)
+        self.assertIsInstance(perimeter(1e18 ** -1), float)
     '''
     Проверка типов данных
     '''
