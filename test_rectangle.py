@@ -25,6 +25,7 @@ class RectangleTestCase(unittest.TestCase):
         self.assertEqual(area(9999999, 1234567), 9999999 * 1234567 / 2)
         self.assertEqual(area(0.00001, 0.000001), 0.00001 * 0.000001 / 2)
         self.assertEqual(area(9999999, 0.000001), 9999999 * 0.000001 / 2)
+        self.assertIsInstance(area(1e10, 1e10), float)
 
 
     '''
@@ -46,7 +47,7 @@ class RectangleTestCase(unittest.TestCase):
     def testperimeter_limit_value(self):
         self.assertEqual(perimeter(9999999, 7654321, 1234567), 9999999 + 7654321 + 1234567)
         self.assertEqual(perimeter(0.00001, 0.002, 0.000000001), 0.00001 + 0.002 + 0.000000001)
-
+        self.assertIsInstance(perimeter(1e10, 1e10, 1e10), float)
     '''
     Проверка типов данных
     '''
@@ -55,12 +56,14 @@ class RectangleTestCase(unittest.TestCase):
             area("5", "90")
             area("5", 90)
             area(5, "90")
+
+        with self.assertRaises(ValueError):
+            area(-8, 16)
+
         with self.assertRaises(TypeError):
             perimeter("5", "4", "3")
             perimeter(5, "4", "3")
-            perimeter("5", 4, "3")
-            perimeter("5", "4", 3)
-            perimeter(5, 4, "3")
             perimeter("5", 4, 3)
-            perimeter(5, "4", 3)
-        
+
+        with self.assertRaises(ValueError):
+            perimeter(-8, 3, 9)

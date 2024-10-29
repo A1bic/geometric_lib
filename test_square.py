@@ -23,6 +23,7 @@ class RectangleTestCase(unittest.TestCase):
     def test_area_limit_value(self):
         self.assertEqual(area(9999999), 9999999**2)
         self.assertEqual(area(0.00001), 0.00001**2)
+        self.assertIsInstance(area(1e18), float)
 
     '''
     Тесты для perimeter()
@@ -43,11 +44,16 @@ class RectangleTestCase(unittest.TestCase):
     def testperimeter_limit_value(self):
         self.assertEqual(perimeter(9999999), 39999996)
         self.assertEqual(perimeter(0.00001), 0.00004)
-
+        self.assertIsInstance(perimeter(1e18), float)
     '''
     Проверка типов данных
     '''
-    def test_type_errors(self):
+    def test_insert_value_errors(self):
+        with self.assertRaises(ValueError):
+            area(-10)
+        with self.assertRaists(TypeError):
+            area("5")
         with self.assertRaises(TypeError):
             perimeter("13")
-            area("5")
+        with self.assertRaises(ValueError):
+            perimeter(-3)
