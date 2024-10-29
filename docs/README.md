@@ -70,6 +70,13 @@ Output:
 20
 ```
 # Commit History
+[00ef85c](https://github.com/A1bic/geometric_lib/commit/00ef85cc201f60ecd7cc39588f875cd67379b8d0) tests are modified again
+[2b222b5](https://github.com/A1bic/geometric_lib/commit/2b222b571f98814aeff7a4c5f1e94e0dd104be89) tests are modified
+[f930fe1](https://github.com/A1bic/geometric_lib/commit/f930fe1d0ec704989412874678abbd415d2d84db) square.py modified
+[a9796fc](https://github.com/A1bic/geometric_lib/commit/a9796fc24fba82d734d011584477559cc1dc840d) circle.py modified
+[a3ffa18](https://github.com/A1bic/geometric_lib/commit/a3ffa183c092871ca09f01f72bd482503587229e) tests for square.py were added
+[75d4ace](https://github.com/A1bic/geometric_lib/commit/75d4aceddef9c944d4d332a203ae60a4468a85e2) tests for rectangle.py were added
+[1117404](https://github.com/A1bic/geometric_lib/commit/11174048f7077c778c3a84fac3c72daf1bb008c5) tests for circle.py were added
 [ac43b4c](https://github.com/A1bic/geometric_lib/commit/ac43b4c12e579e1d64ea6a2f1639194cf9d08f0f) README.md modified  
 [e1b70e0](https://github.com/A1bic/geometric_lib/commit/e1b70e028ac61c08e63f73f088f5a5cc5e2a67b3) circle.py modified  
 [7f43abd](https://github.com/A1bic/geometric_lib/commit/7f43abdad30ff3f57ddbf8f389d77036ef43e24c) file rectangle.py added  
