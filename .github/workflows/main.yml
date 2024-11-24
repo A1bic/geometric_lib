@@ -9,17 +9,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run test square
+        working-directory: ${{ github.workspace }}
         run: python3 -m unittest test_square.py
       - name: Run test circle
+        working-directory: ${{ github.workspace }}
         run: python3 -m unittest test_circle.py
       - name: Run test triangle
+        working-directory: ${{ github.workspace }}
         run: python3 -m unittest test_triangle.py
   run_tests_windows:
     runs-on: windows-latest
     steps:
       - name: Run test square
+        working-directory: ${{ github.workspace }}
         run: python -m unittest test_square.py
       - name: Run test circle
+        working-directory: ${{ github.workspace }}
         run: python -m unittest test_circle.py
       - name: Run test triangle
+        working-directory: ${{ github.workspace }}
         run: python -m unittest test_triangle.py
