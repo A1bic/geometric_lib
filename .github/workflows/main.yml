@@ -10,6 +10,8 @@ jobs:
     steps:
       - name: Show path
         run: pwd
+      - name: Show files
+        run: ls -la
       - name: Run test square
         working-directory: ${{ github.workspace }}
         run: python3 -m unittest test_square.py
