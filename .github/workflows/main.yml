@@ -8,10 +8,18 @@ jobs:
   run_tests_ubuntu:
     runs-on: ubuntu-latest
     steps:
-      - name: Run tests ubuntu
-        run: ls && pwd && python3 -m unittest
+      - name: Run test square
+        run: python3 -m unittest test_square.py
+      - name: Run test circle
+        run: python3 -m unittest test_circle.py
+      - name: Run test triangle
+        run: python3 -m unittest test_triangle.py
   run_tests_windows:
     runs-on: windows-latest
     steps:
-      - name: Run tests windows
-        run: python -m unittest
+      - name: Run test square
+        run: python -m unittest test_square.py
+      - name: Run test circle
+        run: python -m unittest test_circle.py
+      - name: Run test triangle
+        run: python -m unittest test_triangle.py
