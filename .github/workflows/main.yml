@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run tests ubuntu
-        run: python3 -m unittest
+        run: pwd && python3 -m unittest
   run_tests_windows:
     runs-on: windows-latest
     steps:
