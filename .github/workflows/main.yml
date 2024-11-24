@@ -2,7 +2,7 @@ name: "Tests on push"
 on:
   push:
     branches:
-      - '*'
+      - 'labwork_4'
 
 jobs:
   run_tests_ubuntu:
