@@ -73,7 +73,7 @@ class SquareTestCase(unittest.TestCase):
             with self.assertRaises(ValueError):
                 area(-10)
         with self.subTest("ValueError Area Test"):
-            with self.assertRaists(TypeError):
+            with self.assertRaises(TypeError):
                 area("5")
         with self.subTest("TypeError Perimeter Test"):
             with self.assertRaises(TypeError):

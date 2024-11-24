@@ -1,5 +1,5 @@
 import unittest
-from rectangle import area, perimeter
+from triangle import area, perimeter
 
 class RectangleTestCase(unittest.TestCase):
     '''
